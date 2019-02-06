@@ -17,11 +17,10 @@ namespace Avalonia.macOSTestApplication
         public override void DidFinishLaunching(NSNotification notification)
         {
             // Insert code here to initialize your application
-            AppBuilder.Configure<SimpleApp>().UseSkia().UseiOS().SetupWithoutStarting();
+            AppBuilder.Configure<SimpleApp>().UseSkia().UsemacOS().SetupWithoutStarting();
             var window = new AvaloniaWindow { Content = new SimpleControl() };
             window.MakeMainWindow();
-            window.MakeKeyAndOrderFront();
-            return true;
+            window.MakeKeyAndOrderFront(this);
         }
 
         public override void WillTerminate(NSNotification notification)
