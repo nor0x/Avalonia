@@ -1,4 +1,4 @@
-﻿<Project>
+﻿<Project ToolsVersion="15.0">
   <Import Project="Sdk.props" Sdk="MSBuild.Sdk.Extras" />
   <PropertyGroup>
     <TargetFramework>xamarin.ios10</TargetFramework>
